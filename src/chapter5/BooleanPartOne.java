@@ -279,9 +279,9 @@ public class BooleanPartOne {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int a = -1;
-		int b = 2;
-		int c = 3;
+		//int a = -1;
+		//int b = 2;
+		//int c = 3;
 		// task1(a);
 		// task2(a);
 		// task3(a);
