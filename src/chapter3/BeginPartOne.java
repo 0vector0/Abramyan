@@ -9,25 +9,15 @@ package chapter3;
  */
 public class BeginPartOne {
 
-	/**
-	 * Begin1. Дана сторона квадрата a. Найти его периметр P = 4·a.
-	 * 
-	 * @param Сторона
-	 *            квадрата
-	 * @return Периметр
-	 */
+	
+	 //Begin1. Дана сторона квадрата a. Найти его периметр P = 4·a.	
 	static int begin1(int a) {
 		int p = 4 * a;
 		return p;
 	}
 
-	/**
-	 * Begin2. Дана сторона квадрата a. Найти его площадь S = a2.
-	 * 
-	 * @param Сторона
-	 *            квадрата
-	 * @return Площадь
-	 */
+	
+	//Begin2. Дана сторона квадрата a. Найти его площадь S = a2.
 	static int begin2(int a) {
 		int s = (int) Math.pow(a, 2);
 		return s;
