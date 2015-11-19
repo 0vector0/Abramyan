@@ -1,14 +1,14 @@
 /**
  * 
  */
-package begin;
+package chapter3begin;
 
 
 /**
  * @author vector
  *
  */
-public class BeginPartTwo {
+public class BeginPart3 {
 	
 	/*Begin25. Найти значение функции y = 3·x6 – 6·x2 – 7 при данном значении x.
 	 */

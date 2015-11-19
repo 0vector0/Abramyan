@@ -1,13 +1,13 @@
 /**
  * 
  */
-package chapter3;
+package chapter3begin;
 
 /**
  * @author vector
  *
  */
-public class BeginPartOne {
+public class BeginPart1 {
 
 	
 	 //Begin1. Дана сторона квадрата a. Найти его периметр P = 4·a.	
@@ -131,73 +131,64 @@ public class BeginPartOne {
 		mul = a2 * b2;
 		div = a2 / b2;
 	}
-	/*
-	 * Begin11. Даны два ненулевых числа. Найти сумму, разность, произведение и
-	 * частное их модулей.
-	 */
-
-	static void begin11(int a, int b) {
-		double aAbs = (double) Math.abs(a);
-		double bAbs = (double) Math.abs(b);
-		sum = aAbs + bAbs;
-		dif = aAbs - bAbs;
-		mul = aAbs * bAbs;
-		div = aAbs / bAbs;
-	}
+	
 
 	public static void main(String[] args) throws Exception {
 
 		// Begin1
+		System.out.println("Begin1");
 		int a = 2;
 		System.out.println("Периметр квадрата = " + begin1(a));
 
 		// Begin2
+		System.out.println("Begin2");
 		System.out.println("Площадь квадрата = " + begin2(a));
 
 		// Begin3
+		System.out.println("Begin3");
 		int b = 3;
 		System.out.println("Площадь прямоугольника = " + begin3_1(a, b));
 		System.out.println("Периметр прямоугольника = " + begin3_2(a, b));
 
 		// Begin4
+		System.out.println("Begin4");
 		int d = 2;
 		System.out.printf("Длина окружности = %.2f%n", begin4(d));
 
 		// Begin5
+		System.out.println("Begin5");
 		System.out.println("Обьем куба = " + begin5_1(a));
 		System.out.println("Площадь поверхости куба = " + begin5_2(a));
 
 		// Begin6
+		System.out.println("Begin6");
 		int c = 4;
 		System.out.println("Обьем параллелепипеда = " + begin6_1(a, b, c));
 		System.out.println("Площадь поверхости параллелепипеда = " + begin6_2(a, b, c));
 
 		// Begin7
+		System.out.println("Begin7");
 		int r = 4;
 		System.out.printf("Длина окружности =  %.2f%n", begin7_1(r));
 		System.out.printf("Площадь круга =  %.2f%n", begin7_2(r));
 
 		// Begin8
+		System.out.println("Begin8");
 		System.out.printf("Среднее =  %.2f%n", begin8(a, b));
 
 		// Begin9
+		System.out.println("Begin9");
 		System.out.printf("Среднее геометрическое =  %.2f%n", begin9(a, b));
 
 		// Begin10
+		System.out.println("Begin10");
 		begin10(a, b);
 		System.out.printf("сумма их квадратов =  %.2f%n", sum);
 		System.out.printf("разность их квадратов =  %.2f%n", dif);
 		System.out.printf("произведение их квадратов =  %.2f%n", mul);
 		System.out.printf("частное их квадратов =  %.2f%n", div);
 
-		// Begin10
-		a = 5;
-		b = -10;
-		begin11(a, b);
-		System.out.printf("сумма их модулей =  %.2f%n", sum);
-		System.out.printf("разность их модулей =  %.2f%n", dif);
-		System.out.printf("произведение их модулей =  %.2f%n", mul);
-		System.out.printf("частное их модулей =  %.2f%n", div);
+		
 
 	}
 
