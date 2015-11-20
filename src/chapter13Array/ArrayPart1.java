@@ -1,11 +1,10 @@
 package chapter13Array;
 
-//Array1 - Array10
-
+//Array1 - Array17
 public class ArrayPart1 {
 
 	// Создание и заполение массива псевдослучайными числами.
-	static int[] randomArray(int n) {
+	public static int[] randomArray(int n) {
 		int[] randomArray = new int[n];
 		for (int i = 0; i < randomArray.length; i++) {
 			randomArray[i] = (int) (Math.random() * 100);
