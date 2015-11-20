@@ -178,6 +178,80 @@ public class ArrayPart1 {
 		System.out.println();
 	}
 
+	// Array11. Дан массив A размера N и целое число K (1 ≤ K ≤ N). Вывести
+	// элементы массива с порядковыми номерами, кратными K: AK, A2·K, A3·K, … .
+	// Условный оператор не использовать.
+	static void task11(int n, int k) {
+		int[] ar = randomArray(n);
+		printArray(ar);
+		for (int i = k; i < ar.length; i = i + k) {
+			System.out.print(i + ", ");
+		}
+	}
+
+	// Array12. Дан массив A размера N (N — четное число). Вывести его элементы
+	// с
+	// четными номерами в порядке возрастания номеров: A2, A4, A6, …, AN.
+	// Условный оператор не использовать.
+	static void task12(int n, int k) {
+		int[] ar = randomArray(n);
+		printArray(ar);
+		for (int i = 0; i < k; i = i + 2) {
+			System.out.print(ar[i] + ", ");
+		}
+	}
+
+	// Array13. Дан массив A размера N (N — нечетное число). Вывести его
+	// элементы с нечетными номерами в порядке убывания номеров:
+	// AN, AN–2, AN–4, …, A1. Условный оператор не использовать.
+	static void task13(int n, int k) {
+		int[] ar = randomArray(n);
+		printArray(ar);
+		for (int i = k - 1; i >= 0; i = i - 2) {
+			System.out.print(ar[i] + ", ");
+		}
+	}
+
+	// Array14. Дан массив A размера N. Вывести вначале его элементы с четными
+	// номерами (в порядке возрастания номеров), а затем — элементы с нечетными
+	// номерами (также в порядке возрастания номеров):
+	static void task14(int n) {
+		int[] ar = randomArray(n);
+		printArray(ar);
+		System.out.print("четные номера - ");
+		for (int i = 1; i < ar.length; i = i + 2) {
+			System.out.print(ar[i] + ", ");
+		}
+		System.out.println();
+		System.out.print("нечетные номера - ");
+		for (int i = 0; i < ar.length; i = i + 2) {
+			System.out.print(ar[i] + ", ");
+		}
+	}
+
+	// Array15. Дан массив A размера N. Вывести вначале его элементы с нечетными
+	// номерами в порядке возрастания номеров, а затем — элементы с четными
+	// номерами в порядке убывания номеров.
+	// A1, A3, A5, …, A6, A4, A2.
+	// Условный оператор не использовать.
+	static void task15(int n) {
+		int[] ar = randomArray(n);
+		printArray(ar);
+		System.out.println("элементы с нечетными номерами в порядке возрастания номеров");
+		for (int i = 0; i < ar.length; i = i + 2) {
+			System.out.print(ar[i] + ", ");
+		}
+		System.out.println();
+		System.out.println("элементы с четными номерами в порядке убывания номеров");
+		for (int i = ar.length - 1; i > 0; i = i - 2) {
+			System.out.print(ar[i] + ", ");
+		}
+	}
+
+	// Array16. Дан массив A размера N. Вывести его элементы в следующем
+	// порядке: A1, AN, A2, AN–1, A3, AN–2, … .
+	
+
 	public static void main(String[] args) {
 		int n = 10;
 		// task1
@@ -233,6 +307,44 @@ public class ArrayPart1 {
 		// task10
 		System.out.println("task10");
 		task10(n);
+		System.out.println();
+
+		// task11
+		n = 20;
+		int k = 4;
+		System.out.println("task11");
+		System.out.println("N - " + n + " K - " + k);
+		task11(n, k);
+		System.out.println();
+
+		// task12
+		n = 20;
+		k = 12;
+		System.out.println("task12");
+		System.out.println("N - " + n + " K - " + k);
+		task12(n, k);
+		System.out.println();
+
+		// task13
+		n = 20;
+		k = 7;
+		System.out.println("task13");
+		System.out.println("N - " + n + " K - " + k);
+		task13(n, k);
+		System.out.println();
+
+		// task14
+		n = 20;
+		System.out.println("task14");
+		System.out.println("N - " + n);
+		task14(n);
+		System.out.println();
+
+		// task15
+		n = 20;
+		System.out.println("task15");
+		System.out.println("N - " + n);
+		task15(n);
 		System.out.println();
 
 	}
