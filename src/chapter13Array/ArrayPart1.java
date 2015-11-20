@@ -250,7 +250,31 @@ public class ArrayPart1 {
 
 	// Array16. Дан массив A размера N. Вывести его элементы в следующем
 	// порядке: A1, AN, A2, AN–1, A3, AN–2, … .
-	
+	static void task16(int n) {
+		int[] ar = randomArray(n);
+		printArray(ar);
+		int j = ar.length - 1;
+		for (int i = 0; i < ar.length; i = i + 2) {
+			System.out.print(ar[i] + ", ");
+			System.out.print(ar[j] + ", ");
+			j--;
+		}
+	}
+
+	// Array17. Дан массив A размера N. Вывести его элементы в следующем
+	// порядке: A1, A2, AN, AN–1, A3, A4, AN–2, AN–3, … .
+	static void task17(int n) {
+		int[] ar = randomArray(n);
+		printArray(ar);
+		int j = ar.length - 1;
+		for (int i = 0; i < ar.length/2; i = i + 2) {
+			System.out.print(ar[i] + ", ");
+			System.out.print(ar[i + 1] + ", ");
+			System.out.print(ar[j] + ", ");
+			System.out.print(ar[j - 1] + ", ");
+			j = j - 2;
+		}
+	}
 
 	public static void main(String[] args) {
 		int n = 10;
@@ -345,6 +369,20 @@ public class ArrayPart1 {
 		System.out.println("task15");
 		System.out.println("N - " + n);
 		task15(n);
+		System.out.println();
+
+		// task16
+		n = 20;
+		System.out.println("task16");
+		System.out.println("N - " + n);
+		task16(n);
+		System.out.println();
+
+		// task17
+		n = 20;
+		System.out.println("task17");
+		System.out.println("N - " + n);
+		task17(n);
 		System.out.println();
 
 	}
