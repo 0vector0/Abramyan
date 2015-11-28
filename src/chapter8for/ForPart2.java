@@ -205,6 +205,9 @@ public class ForPart2 {
 		System.out.println(n);
 		System.out.println(task20(n));
 		System.out.println(" ");
+		
+		
+		
 	}
 
 }

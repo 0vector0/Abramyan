@@ -4,7 +4,7 @@ package chapter13Array;
 public class ArrayPart1 {
 
 	// Создание и заполение массива псевдослучайными числами.
-	public static int[] randomArray(int n) {
+	public static  int[] randomArray(int n) {
 		int[] randomArray = new int[n];
 		for (int i = 0; i < randomArray.length; i++) {
 			randomArray[i] = (int) (Math.random() * 100);

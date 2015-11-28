@@ -212,6 +212,9 @@ public class ArrayPart2 {
 		System.out.println("проверка рандомного масива созданого методом randomArray(n)");
 		printArray(randomArray(n));
 		System.out.println(task24(randomArray(n)));
+		
+		//ArrayPart1.randomArray(n);
+		
 
 	}
 }
