@@ -1,6 +1,6 @@
 package chapter5;
 
-// Boolean1 - Boolean10
+// Boolean1 - Boolean9
 
 public class BooleanPart1 {
 
@@ -74,14 +74,40 @@ public class BooleanPart1 {
 		return bool;
 	}
 
-	
+	// Boolean10. Даны два целых числа: A, B. Проверить истинность
+	// высказывания: «Ровно одно из чисел A и B нечетное».
+	static boolean task10(int a, int b) {
+		boolean bool = false;
+		if (a % 2 == 0 || b % 2 == 0) {
+			bool = true;
+		}
+		if (a % 2 == 0 && b % 2 == 0) {
+			bool = false;
+		}
+
+		return bool;
+	}
+
+	// Boolean11. Даны два целых числа: A, B. Проверить истинность высказывания:
+	// «Числа A и B имеют одинаковую четность».
+	static boolean task11(int a, int b){
+		boolean bool = false;
+		
+		if (a%2 == 0 && b%2 == 0) {
+			bool = true;
+		}
+		if (a%2 == 1 && b%2 == 1) {
+			bool = true;
+		}
+		return bool;
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		//int a = -1;
-		//int b = 2;
-		//int c = 3;
+		// int a = -1;
+		// int b = 2;
+		// int c = 3;
 		// task1(a);
 		// task2(a);
 		// task3(a);
@@ -91,8 +117,10 @@ public class BooleanPart1 {
 		// System.out.println("A = " + a + " " + "B = " + b);
 		// System.out.print("«Хотя бы одно из чисел A и B нечетное». - it is " +
 		// task9(a, b));
-
-		
+		int a = 10;
+		int b = 10;
+		System.out.println();
+		System.out.println(task10(a, b));
 
 	}
 
